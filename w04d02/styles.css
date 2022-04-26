@@ -1,0 +1,10 @@
+body {
+  background-color: darkgreen;
+  color: pink;
+}
+
+.content {
+  border: 2px solid orange;
+  border-radius: 15px;
+  padding: 20px;
+}

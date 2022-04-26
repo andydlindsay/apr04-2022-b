@@ -1,11 +1,28 @@
 <html>
   <head>
     <title>My Page</title>
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="script2.js"></script>
+    <script src="script.js"></script>
   </head>
   
   <body>
     <h1>Welcome to my page!</h1>
     <div class="content">
+      <form id="new-item-form">
+        <label>New list item</label>
+        <input id="new-list-item" />
+        <button id="add-list-item">Add!</button>
+        <button id="clear-mouseover">Clear</button>
+
+        <button type="submit">Submit</button>
+        <br/>
+      </form>
+
       <p>My Favourite Numbers</p>
       <ul id="main-list">
         <li>One</li>
@@ -13,5 +30,6 @@
         <li>Three</li>
       </ul>
     </div>
+ 
   </body>
 </html>
