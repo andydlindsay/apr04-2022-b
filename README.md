@@ -5,3 +5,5 @@
 * [W03D01 - Web Servers 101](/w03d01)
 * [W03D03 - HTTP Cookies & User Authentication](/w03d03)
 * [W04D02 - Client Side JavaScript & jQuery](/w04d02)
+* [W05D02 - Database Design](/w05d02)
+* [W05D05 - Mid-term Project Kickoff](/w05d05)
