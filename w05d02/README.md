@@ -57,11 +57,11 @@
 ### Convert Two Spreadsheets
 - [Gist with instruction](https://gist.github.com/andydlindsay/20e7305e853bad7b587f294b054cf8de)
 
-![Library ERD]()
+![Library ERD](https://raw.githubusercontent.com/andydlindsay/apr04-2022-b/master/w05d02/library.drawio.png)
 
 ### Student Suggestion: Cats in Space
 
-![Cats in Space]()
+![Cats in Space](https://raw.githubusercontent.com/andydlindsay/apr04-2022-b/master/w05d02/cats%20in%20space.drawio.png)
 
 ### Useful Links
 * [Database Normalization](https://en.wikipedia.org/wiki/Database_normalization)
