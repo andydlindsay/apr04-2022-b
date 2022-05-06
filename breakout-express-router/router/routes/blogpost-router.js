@@ -18,7 +18,6 @@ const blogpostRouter = (db) => {
       });
   });
 
-
   return router;
 };
 

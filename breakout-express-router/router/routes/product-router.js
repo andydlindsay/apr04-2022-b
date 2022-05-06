@@ -13,7 +13,6 @@ router.get('/', (req, res) => {
     });
 });
 
-// GET /maps/:map-id/pins/:pin-id
 // GET /products/:id
 router.get('/:id', (req, res) => {
   productQueries.getProductById(req.params.id)
