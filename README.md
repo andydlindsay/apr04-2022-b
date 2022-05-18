@@ -9,3 +9,4 @@
 * [W05D05 - Mid-term Project Kickoff](/w05d05)
 * [BREAKOUT - Express Router](/breakout-express-router)
 * [W07D02 - Component-Based UI w/ React](/w07d02)
+* [W07D03 - Immutable Update Patterns](/w07d03)
