@@ -9,66 +9,31 @@
 - [x] `useRequest`
 - [x] `useKeyPress`
 
-### Custom Hook
-* is a helper function that uses a hook internally
-* remove business logic from the presentation
-
-
-```js  
-useEffect(() => {
-  const interval = setInterval(() => setDebounced(input), ms);
-  setInterval(interval);
-  
-  clearTimeout(timeout);
-  return cleanup;
-}, [input, ms]);
-```
-
-
-why do we need ‘return’ for the clean up function?
-why do we put the clean up function inside an anonymous arrow function?
-what happens if i just do clearTimeout(timeout) without return or arrow function?
-
-
-
-
+### Custom Hooks
+- From the [React Docs](https://reactjs.org/docs/hooks-custom.html):
+> Building your own Hooks lets you extract component logic into reusable functions.
+- We can pull repetitive or complex code out of our components and move it into _custom hooks_
+- _Custom hooks_ are just JavaScript functions that can use React hooks
+- They must start with the prefix `use` so that React knows they are hooks
+- Multiple components using the same custom hook **do not share state**
 
 ```js
-import React, { useState, useEffect } from "react";import ReactDOM from "react-dom";
-
-import "./styles.scss";
-
-import Broken from "./components/Broken";
-import Fixed from "./components/Fixed";
-
-function Application() {
-  const [likes, setLikes] = useState(0);
+// simple custom hook
+const useDocumentTitle = (title) => {
   useEffect(() => {
-    if (likes > 0) {
-      const timeout = setTimeout(() => setLikes((prev) => prev - 1), 1000);
-      return () => clearTimeout(timeout); // clears the timer set above
-      //if i didn't have return, the count down doesn't go down.
-    }
-  }, [likes]);
+    document.title = title;
+  }, [title]);
+};
 
-  return (
-    <div onClick={() => setLikes(likes + 1)}>
-      {likes > 0 ? <Fixed>{likes}</Fixed> : <Broken />}
-    </div>
-  );
-}
-
-ReactDOM.render(<Application />, document.getElementById("root"));
-
-
-cosnt returnVal = callback();
-if (timeToCleanup) {
-  returnVal();
-}
+// inside of a component
+useDocumentTitle('My New Title');
 ```
 
+### Custom Hook Examples
+- [Browser Dimensions](https://codesandbox.io/s/custom-hooks-exercise-browser-dimensions-d5tv7)
+- [Mouse Position](https://codesandbox.io/s/eloquent-allen-dxfns?fontsize=14)
 
-
-
-
-
+### Useful Links
+- [React Docs: Custom Hooks](https://reactjs.org/docs/hooks-custom.html)
+- [Easy to Understand Hook Recipes](https://usehooks.com/)
+- [![awesome](https://camo.githubusercontent.com/1997c7e760b163a61aba3a2c98f21be8c524be29/68747470733a2f2f617765736f6d652e72652f62616467652e737667) React Hooks Resource](https://github.com/rehooks/awesome-react-hooks)
