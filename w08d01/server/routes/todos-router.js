@@ -44,8 +44,10 @@ router.patch('/:id', (req, res) => {
   const { newTask, completed } = req.body;
 
   const todoId = req.params.id;
-
-  todos[todoId].task = newTask;
+  
+  if (newTask) {
+    todos[todoId].task = newTask;
+  }
 
   if (completed !== undefined) {
     todos[todoId].completed = completed;
