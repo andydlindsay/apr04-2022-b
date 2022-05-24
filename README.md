@@ -12,3 +12,4 @@
 * [W07D03 - Immutable Update Patterns](/w07d03)
 * [W07D05 - Custom Hooks](/w07d05)
 * [W08D01 - React Review](/w08d01)
+* [W08D02 - Unit & Integration Testing](/w08d02)
