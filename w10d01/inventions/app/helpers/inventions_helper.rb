@@ -1,0 +1,2 @@
+module InventionsHelper
+end

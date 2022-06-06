@@ -1,0 +1,9 @@
+<h1>All the mottos for <%= @invention.name %>!</h1>
+
+<%= link_to 'See all the inventions', inventions_path %>
+
+<!-- <% @mottos.each do |motto| %>
+  <%= render 'motto', motto: motto %>
+<% end %> -->
+
+<%= render @mottos %>

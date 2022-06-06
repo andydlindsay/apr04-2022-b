@@ -1,0 +1,2 @@
+class Watermelon < ApplicationRecord
+end

@@ -1,0 +1,9 @@
+<h1>All the inventions!!</h1>
+
+<% @inventions.each do |invention| %>
+  <div class="invention">
+    <h2>Name: <%= invention.name %></h2>
+    <h2>Url: <%= invention.url %></h2>
+    <%= link_to "Check out the mottos!", invention_mottos_path(invention) %>
+  </div>
+<% end %>

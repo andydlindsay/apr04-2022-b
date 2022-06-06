@@ -1,0 +1,2 @@
+class WatermelonsController < ApplicationController
+end
