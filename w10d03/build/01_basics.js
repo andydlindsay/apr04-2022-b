@@ -1,0 +1,10 @@
+"use strict";
+let username = 'Alice';
+username = 'Bob';
+username = 42;
+// username = true;
+// username = [];
+const nums = [];
+nums.push(2);
+// nums.push('hello');
+const myVar = nums.pop();
